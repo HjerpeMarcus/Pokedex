@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <form id="search-form" action="">
+            <label for="search-input">Sök pokemon</label>
+            <div class="search-container">
+                <input type="text" id="search-input">
+                <button id="search-btn">sök</button>
+            </div>
+            <p>Här kan du söka efter de vanligaste pokemons</p>
+        </form>
+        <section id="poke-container">
+            <article class="poke-card">
+                <span id="hp-span"></span>
+                <div class="img-container">
+                    <!-- HÄR SKA DET IN EN BILD -->
+                </div>
+                <h2 id="poke-name"></h2>
+                
+                <section class="info-boxes">
+                    <h3>Basic info</h3>
+                    <ul class="poke-list basic">
+                        <li class="poke-item">
+                          <span>Height</span>
+                          <!-- I denna span ska höjden in -->
+                          <span id="pokeHeight"></span>
+                        </li>
+                        <li class="poke-item">
+                          <span>Weight</span>
+                          <!-- I denna span ska vikt in -->
+                          <span id="pokeWeight"></span>
+                        </li>
+                        <li class="poke-item">
+                            <span>Id</span>
+                            <!-- I denna span ska id in -->
+                            <span id="pokeId"></span>
+                        </li>
+                        <li class="poke-item">
+                            <span>Move</span>
+                            <!-- I denna span ska move in -->
+                            <span id="pokeMove"></span>
+                        </li>
+                      </ul>
+                </section>
+                <section class="info-boxes">
+                    <h3>Type</h3>
+                    <ul class="poke-list type-list">
+                        <!-- Här ska flera list-taggar in med klassen tag -->
+                        <!-- <li class="tag">Grass</li> -->
+                    </ul>
+                </section>
+                <!-- <section class="info-boxes">
+                    <h3>Weaknesses</h3>
+                    <ul class="poke-list">
+	
+                        <li class="tag">Fire
+                        </li>
+          
+                        <li class="tag">Psychic
+                        </li>
+          
+                        <li class="tag">Flying
+                        </li>
+          
+                        <li class="tag">Ice</li>
+          
+                      </ul>
+                </section> -->
+            </article>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
